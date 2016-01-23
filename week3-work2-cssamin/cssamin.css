@@ -1,0 +1,544 @@
+/*css for cssamin.html*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -326px auto auto -400px;
+}
+
+.con div {
+    position: absolute;
+}
+
+.head,
+.body {
+    left: 50%;
+}
+
+.head,
+.left_ear,
+.right_ear,
+.body,
+.left_hand,
+.right_hand,
+.left_foot,
+.right_foot {
+    background: #DEA261;
+}
+
+.head {
+    z-index: 3;
+    width: 450px;
+    height: 328px;
+    border: 20px solid #333;
+    border-radius: 48%;
+    margin-left: -225px;
+    -webkit-animation: anim_head 5s .2s ease-in-out infinite;
+    -moz-animation: anim_head 5s .2s ease-in-out infinite;
+    -ms-animation: anim_head 5s .2s ease-in-out infinite;
+    animation: anim_head 5s .2s ease-in-out infinite;
+}
+
+.left_ear,
+.right_ear {
+    width: 195px;
+    height: 176px;
+    border: 20px solid #333;
+    border-radius: 61% 61% 54% 54%;
+    border-bottom-color: transparent;
+}
+
+.left_ear {
+    top: -86px;
+    left: -112px;
+    -webkit-transform: rotate(-46deg);
+    -moz-transform: rotate(-46deg);
+    transform: rotate(-46deg);
+}
+
+.right_ear {
+    top: -86px;
+    right: -112px;
+    -webkit-transform: rotate(46deg);
+    -moz-transform: rotate(46deg);
+    transform: rotate(46deg);
+}
+
+.left_eye,
+.right_eye {
+    width: 38px;
+    height: 56px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.left_eye {
+    top: 66px;
+    left: 93px;
+}
+
+.right_eye {
+    top: 66px;
+    right: 93px;
+}
+
+.left_ear_in,
+.right_ear_in {
+    width: 106px;
+    height: 80px;
+    border: 11px solid #333;
+    border-radius: 50% 50% 50% 50%;
+    top: 47px;
+    left: 30px;
+}
+
+.left_ear_in,
+.right_ear_in,
+.mouth,
+.body_in,
+.left_foot_in,
+.right_foot_in {
+    background: #FFE0B9;
+}
+
+.nose {
+    z-index: 4;
+    width: 59px;
+    height: 29px;
+    background: #333;
+    border-radius: 50%;
+    top: 22px;
+    left: 69px;
+}
+
+.mouth {
+    z-index: 3;
+    width: 200px;
+    height: 200px;
+    border: 14px solid #333;
+    border-radius: 50%;
+    top: 96px;
+    left: 108px;
+    -webkit-animation: anim_mouth .2s .1s ease-in-out infinite alternate;
+    -moz-animation: anim_mouth .2s .1s ease-in-out infinite alternate;
+    animation: anim_mouth .2s .1s ease-in-out infinite alternate;
+}
+
+.month_in1 {
+    width: 0px;
+    height: 42px;
+    border: 7px solid #333;
+    border-radius: 34%;
+    top: 50px;
+    left: 91px;
+}
+
+.month_in2 {
+    width: 30px;
+    height: 0px;
+    border: 7px solid #333;
+    border-radius: 38%;
+    top: 105px;
+    left: 53px;
+    -webkit-transform: rotate(-26deg);
+    -moz-transform: rotate(-26deg);
+    transform: rotate(-26deg);
+}
+
+.month_in3 {
+    width: 30px;
+    height: 0px;
+    border: 7px solid #333;
+    border-radius: 38%;
+    top: 105px;
+    right: 58px;
+    -webkit-transform: rotate(26deg);
+    -moz-transform: rotate(26deg);
+    transform: rotate(26deg);
+}
+
+.body {
+    z-index: 2;
+    width: 350px;
+    height: 380px;
+    border: 20px solid #333;
+    border-radius: 43% 43% 30% 30%;
+    top: 289px;
+    margin-left: -175px;
+}
+
+.body_in {
+    width: 185px;
+    height: 150px;
+    border: 20px solid #333;
+    border-radius: 50%;
+    left: 57px;
+    top: 149px;
+}
+
+.left_hand,
+.right_hand {
+    width: 260px;
+    height: 100px;
+    border: 20px solid #333;
+    border-radius: 40%;
+}
+
+.left_hand {
+    top: 283px;
+    left: 19px;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: rotate(-66deg);
+    -moz-transform: rotate(-66deg);
+    transform: rotate(-66deg);
+    -webkit-animation: anim_lefthand 2.5s .2s ease-in-out infinite;
+    -moz-animation: anim_lefthand 2.5s .2s ease-in-out infinite;
+    animation: anim_lefthand 2.5s .2s ease-in-out infinite;
+}
+
+.right_hand {
+    top: 283px;
+    right: -19px;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotate(66deg);
+    -moz-transform: rotate(66deg);
+    transform: rotate(66deg);
+    -webkit-animation: anim_righthand 2.5s .2s ease-in-out infinite;
+    -moz-animation: anim_righthand 2.5s .2s ease-in-out infinite;
+    animation: anim_righthand 2.5s .2s ease-in-out infinite;
+}
+
+.left_foot,
+.right_foot {
+    z-index: 5;
+    width: 230px;
+    height: 280px;
+    border: 20px solid #333;
+    border-radius: 50%;
+    top: 437px;
+}
+
+.left_foot {
+    left: 97px;
+    -webkit-transform: rotate(-17deg);
+    -moz-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+    -webkit-animation: anim_leftfoot 2.5s .2s ease-in-out infinite;
+    -moz-animation: anim_leftfoot 2.5s .2s ease-in-out infinite;
+    animation: anim_leftfoot 2.5s .2s ease-in-out infinite;
+}
+
+.right_foot {
+    right: 97px;
+    -webkit-transform: rotate(17deg);
+    -moz-transform: rotate(17deg);
+    transform: rotate(17deg);
+    -webkit-animation: anim_rightfoot 2.5s .2s ease-in-out infinite;
+    -moz-animation: anim_rightfoot 2.5s .2s ease-in-out infinite;
+    animation: anim_rightfoot 2.5s .2s ease-in-out infinite;
+}
+
+.left_foot_in,
+.right_foot_in {
+    width: 131px;
+    height: 180px;
+    border: 12px solid #333;
+    border-radius: 50%;
+    top: 45px;
+    left: 34px
+}
+
+.left_claw_1,
+.left_claw_2,
+.left_claw_3,
+.right_claw_1,
+.right_claw_2,
+.right_claw_3 {
+    width: 25px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.left_claw_1 {
+    top: 1px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(-33deg);
+    -moz-transform: rotate(-33deg);
+    transform: rotate(-33deg);
+}
+
+.left_claw_2 {
+    top: -36px;
+    left: 49px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+
+.left_claw_3 {
+    top: -13px;
+    left: 99px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(33deg);
+    -moz-transform: rotate(33deg);
+    transform: rotate(33deg);
+}
+
+.right_claw_1 {
+    top: -8px;
+    left: 3px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(-26deg);
+    -moz-transform: rotate(-26deg);
+    transform: rotate(-26deg);
+}
+
+.right_claw_2 {
+    top: -38px;
+    left: 46px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.right_claw_3 {
+    top: -14px;
+    left: 93px;
+    -webkit-transform-origin: bottom;
+    -moz-transform-origin: bottom;
+    transform-origin: bottom;
+    -webkit-transform: rotate(32deg);
+    -moz-transform: rotate(32deg);
+    transform: rotate(32deg);
+}
+/*anim_head动画部分*/
+@-webkit-keyframes anim_head {
+    0%,
+    50%,
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(-20deg);
+    }
+    75% {
+        -webkit-transform: rotate(20deg);
+    }
+}
+@-moz-keyframes anim_head {
+    0%,
+    50%,
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+    25% {
+        -moz-transform: rotate(-20deg);
+    }
+    75% {
+        -moz-transform: rotate(20deg);
+    }
+}
+@-ms-keyframes anim_head {
+    0%,
+    50%,
+    100% {
+        -ms-transform: rotate(0deg);
+    }
+    25% {
+        -ms-transform: rotate(-20deg);
+    }
+    75% {
+        -ms-transform: rotate(20deg);
+    }
+}
+
+@keyframes anim_head {
+    0%,
+    50%,
+    100% {
+       transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+}
+/*anim_mouth动画部分*/
+@-webkit-keyframes anim_mouth {
+    0% {
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+@-moz-keyframes anim_mouth {
+    0% {
+        -moz-transform: translateY(10px);
+    }
+    100% {
+        -moz-transform: translateY(-10px);
+    }
+}
+@keyframes anim_mouth {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+/*anim_lefthand动画部分*/
+@-webkit-keyframes anim_lefthand {
+    0%,
+    100% {
+        -webkit-transform: rotate(-66deg);
+    }
+    50% {
+        -webkit-transform: rotate(-26deg);
+    }
+}
+@-moz-keyframes anim_lefthand {
+    0%,
+    100% {
+        -moz-transform: rotate(-66deg);
+    }
+    50% {
+        -moz-transform: rotate(-26deg);
+    }
+}
+@keyframes anim_lefthand {
+    0%,
+    100% {
+        transform: rotate(-66deg);
+    }
+    50% {
+        transform: rotate(-26deg);
+    }
+}
+
+/*anim_righthand动画部分*/
+@-webkit-keyframes anim_righthand {
+    0%,
+    100% {
+        -webkit-transform: rotate(66deg);
+    }
+    50% {
+        -webkit-transform: rotate(26deg);
+    }
+}
+@-moz-keyframes anim_righthand {
+    0%,
+    100% {
+        -moz-transform: rotate(66deg);
+    }
+    50% {
+        -moz-transform: rotate(26deg);
+    }
+}
+@keyframes anim_righthand {
+    0%,
+    100% {
+        transform: rotate(66deg);
+    }
+    50% {
+        transform: rotate(26deg);
+    }
+}
+
+/*anim_leftfoot动画部分*/
+@-webkit-keyframes anim_leftfoot {
+    0% {
+        -webkit-transform: rotate(-17deg);
+    }
+    50% {
+        -webkit-transform: rotate(-47deg);
+    }
+    100% {
+        -webkit-transform: rotate(-17deg);
+    }
+}
+@-moz-keyframes anim_leftfoot {
+    0% {
+        -moz-transform: rotate(-17deg);
+    }
+    50% {
+        -moz-transform: rotate(-47deg);
+    }
+    100% {
+        -moz-transform: rotate(-17deg);
+    }
+}
+@keyframes anim_leftfoot {
+    0% {
+        transform: rotate(-17deg);
+    }
+    50% {
+        transform: rotate(-47deg);
+    }
+    100% {
+        transform: rotate(-17deg);
+    }
+}
+
+/*anim_rightfoot动画部分*/
+@-webkit-keyframes anim_rightfoot {
+    0% {
+        -webkit-transform: rotate(17deg);
+    }
+    50% {
+        -webkit-transform: rotate(47deg);
+    }
+    100% {
+        -webkit-transform: rotate(17deg);
+    }
+}
+@-moz-keyframes anim_rightfoot {
+    0% {
+        -moz-transform: rotate(17deg);
+    }
+    50% {
+        -moz-transform: rotate(47deg);
+    }
+    100% {
+        -moz-transform: rotate(17deg);
+    }
+}
+@keyframes anim_rightfoot {
+    0% {
+        transform: rotate(17deg);
+    }
+    50% {
+        transform: rotate(47deg);
+    }
+    100% {
+        transform: rotate(17deg);
+    }
+}

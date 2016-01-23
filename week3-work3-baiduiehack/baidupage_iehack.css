@@ -1,0 +1,450 @@
+/*css for homework3.html*/
+
+
+/*基本部分*/
+
+
+/*html5*/
+
+article,
+aside,
+dialog,
+footer,
+header,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #ffffff;
+    font: 12px arial;
+}
+
+a {
+    text-align: center;
+}
+
+#con {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    min-width: 810px;
+}
+
+
+/*header部分*/
+
+header {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 397px;
+    height: 24px;
+    margin: 19px 0 5px 0;
+    padding: 0 96px 0 0;
+}
+
+*html header {
+    width: 500px;
+    padding-right: 100px;
+}
+
+/*nav部分*/
+
+ul {
+    list-style: none;
+}
+
+.nav a,
+.nav a:visited {
+    font-weight: bold;
+}
+
+.nav-a,
+.nav-a:visited {
+    *position: absolute;
+    /*for ie7*/
+    *top: -10px;
+    /*foe ie7*/
+    float: left;
+    color: #333;
+    line-height: 24px;
+    margin-left: 20px;
+    font-size: 13px;
+}
+
+.nav a:hover,
+.nav-boot a:hover,
+.nav-set a:hover {
+    color: #00c;
+}
+
+.nav-set:hover #set-ul {
+    display: block;
+}
+
+
+/*nav for ie7*/
+
+#nm,
+#news,
+#hao123,
+#map,
+#video,
+#tieba,
+#login,
+#set {
+    *top: -2px;
+    *font-size: 12px;
+}
+
+#nm {
+    *right: 437px;
+}
+
+#news {
+    *right: 390px;
+}
+
+#hao123 {
+    *right: 331px;
+}
+
+#map {
+    *right: 284px;
+}
+
+#video {
+    *right: 237px;
+}
+
+#tieba {
+    *right: 190px;
+}
+
+#login {
+    *right: 143px;
+}
+
+#set {
+    *right: 96px;
+}
+
+
+/*end nav for ie7*/
+
+#newp,
+#newp:link,
+#newp:visited {
+    position: absolute;
+    right: 10px;
+    background-color: #38f;
+    border-bottom: 1px solid #38f;
+    color: #ffffff;
+    width: 60px;
+    height: 23px;
+    line-height: 24px;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 0px 2px 0px 19px;
+    *margin-top: 8px;
+    /*for ie 7*/
+}
+
+.set {
+    display: none;
+    width: 70px;
+    font-size: 12px;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    position: absolute;
+    z-index: 4;
+    left: 349px;
+    left: 342px\9;
+    /*for ie9+*/
+    top: 26px;
+    box-shadow: 1px 1px 5px #d1d1d1;
+    behavior: url(ie-css3.htc);
+}
+
+
+/* Firefox 3+ */
+
+@-moz-document url-prefix() {
+    .set {
+        left: 341px;
+    }
+}
+
+.set-arrow {
+    width: 0;
+    height: 0;
+    font-style: 0;
+    line-height: 0;
+    position: absolute;
+    top: -10px;
+    left: 28px;
+}
+
+.set-arrow em,
+.set-arrow i {
+    width: 0;
+    height: 0;
+    font-style: 0;
+    line-height: 0;
+    position: absolute;
+    border: 5px solid transparent;
+    border-style: dashed dashed solid dashed;
+}
+
+.set-arrow em {
+    border-bottom-color: #d8d8d8;
+    top: -1px;
+}
+
+.set-arrow i {
+    border-bottom-color: #ffffff;
+}
+
+.set a,
+.set a:link,
+.set a:visited {
+    background: #ffffff;
+    color: #333;
+    display: block;
+    margin: 0 auto;
+    padding: 0px 9px;
+    line-height: 26px;
+    text-decoration: none;
+}
+
+.set a:hover,
+.set a:active {
+    background: #38f;
+    color: #ffffff;
+}
+
+.nav-newp:hover #newp-ul {
+    display: block;
+}
+
+#newp-ul {
+    min-height: 600px;
+    display: none;
+    height: 100%;
+    width: 85px;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    background: #f9f9f9;
+    overflow: hidden;
+    right: 0;
+    top: -19px;
+    z-index: 2;
+}
+
+.newp-title {
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    width: 66px;
+    height: 43px;
+    line-height: 43px;
+    padding-top: 9px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#newp-ul li a {
+    position: static;
+    background: transparent;
+    color: #666;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    width: 66px;
+    height: 76px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+#newp-ul li a:hover {
+    text-decoration: underline;
+}
+
+.newp-c {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 10px auto 5px;
+    background: url(newp.png);
+    background-repeat: no-repeat;
+}
+
+#newp-music {
+    width: 40px;
+    background-position: -72px 0;
+}
+
+#newp-image {
+    background-position: -112px 0;
+}
+
+#newp-zhidao {
+    background-position: -36px 0;
+}
+
+#newp-wenku {
+    background-position: -148px 0;
+}
+
+#newp-top {
+    background-position: -184px 0;
+}
+
+#newp-e {
+    background-position: -220px 0;
+}
+
+.newp-more {
+    margin-top: 15px;
+    height: 30px;
+    width: 85px;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+}
+
+.newp-more a {
+    color: #666!important;
+    text-decoration: underline!important;
+}
+
+
+/*article部分*/
+
+article {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 18.91%;
+}
+
+
+/*form部分*/
+
+.form {
+    width: 641px;
+    height: 37px;
+    margin: 22px auto 0;
+}
+
+
+/*搜索框部分*/
+
+.search-w {
+    float: left;
+    width: 539px;
+    height: 34px;
+    background: #fff;
+    border: 1px solid #b8b8b8;
+    margin-right: 0;
+    border-right-width: 0;
+}
+
+.search-w:visited,
+.search-w:active,
+.search-w:hover {
+    border-color: #38f;
+}
+
+.search {
+    float: left;
+    width: 500px;
+    height: 22px;
+    margin: 6px 0px 0px 7px;
+    /**line-height: 22px;*/
+    line-height: 22px;
+    *border: 0;
+    /*for ie7*/
+    border: none;
+    outline: 0;
+}
+
+
+/*提交按钮部分*/
+
+.submit-w {
+    float: left;
+}
+
+.btn {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 1px;
+    width: 100px;
+    height: 36px;
+    background: #38f;
+    color: #ffffff;
+    border: 1px solid #38f;
+    border-bottom: 1px solid #2d78f4;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #317ef3;
+    border-bottom: 1px solid #2868C8;
+    box-shadow: 1px 1px 1px #cccccc;
+    position: relative;
+    z-index: 10;
+    behavior: url(ie-css3.htc);
+}
+
+
+/*footer部分*/
+
+footer {
+    position: absolute;
+    bottom: 9.1%;
+    width: 100%;
+    text-align: center;
+}
+
+span.f1,
+span.f2 {
+    display: block;
+}
+
+span.f1 a {
+    color: #00c;
+    margin: 0 9px;
+}
+
+span.f2 {
+    margin-top: 5px;
+}
+
+span.f2,
+span.f2 a {
+    color: #666;
+}
+
+span.fc {
+    background: url("icons_btn.png");
+    background-position: -600px -96px;
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+    position: relative;
+    top: 3px;
+}

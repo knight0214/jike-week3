@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度兼容界面</title>
+    <link rel="stylesheet" type="text/css" href="baidupage_iehack.css">
+    <!--[if IE 7]>
+    <style>
+     .set{
+      left:350px;
+     }
+    </style>
+    <![endif]-->
+    <!--[if IE 8]>
+    <style>
+     .set{
+      left:349px;
+     }
+    </style>
+    <![endif]-->
+    <!--用于兼容H5标签-->
+    <script>
+    (function() {
+        if (!
+            /*@cc_on!@*/
+            0) return;
+        var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+        var i = e.length;
+        while (i--) {
+            document.createElement(e[i])
+        }
+    })()
+    </script>
+    <!--用于适配屏幕-->
+    <script type="text/javascript">
+    function chlikHeight() {
+
+        var con = document.getElementById('con');
+        var newp = document.getElementById('newp-ul');
+        var clientHeight = document.documentElement.clientHeight || document.body.clientHeight;
+        if (clientHeight > 600) {
+            con.style.height = clientHeight + "px";
+            newp.style.height = clientHeight + "px";
+        } else return;
+    }
+    </script>
+
+</head>
+
+<body onload="chlikHeight()">
+    <div id="con">
+        <!--header start-->
+        <header>
+        <!--nav start-->
+            <nav>
+                <ul class="menu_1">
+                    <li class="nav">
+                        <a class="nav-a" id="nm" href="http://www.nuomi.com/?cid=002540">糯米</a>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-a" id="news" href="http://news.baidu.com/">新闻</a>
+                    </li>
+                    <li class="nav">
+                        <a  class="nav-a" id="hao123" href="http://www.hao123.com/">hao123</a>
+                    </li>
+                    <li class="nav">
+                        <a  class="nav-a" id="map" href="http://map.baidu.com/">地图</a>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-a" id="video" href="http://v.baidu.com/">视频</a>
+                    </li>
+                    <li class="nav">
+                        <a class="nav-a" id="tieba" href="http://tieba.baidu.com/">贴吧</a>
+                    </li>
+                    <li class="nav-boot">
+                        <a  class="nav-a" id="login" href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+                    </li>
+                    <li class="nav-set">
+                        <a class="nav-a" id="set" href="http://www.baidu.com/gaoji/preferences.html">设置</a>
+                        <ul class="set" id="set-ul">
+                            <li class="set-arrow">
+                                <div>
+                                    <em></em>
+                                    <i></i>
+                                </div>
+                            </li>
+                            <li class="set-li">
+                                <a href="#">搜索设置</a>
+                            </li>
+                            <li class="set-li">
+                                <a href="#">高级搜索</a>
+                            </li>
+                            <li class="set-li">
+                                <a href="#">关闭预测</a>
+                            </li>
+                            <li class="set-li">
+                                <a href="#">搜索历史</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-newp">
+                        <a class="nav-a" id="newp"href="#" >更多产品</a>
+                        <ul id="newp-ul">
+                            <li>
+                                <div class="newp-title">
+                                    更多产品
+                                </div>
+                            </li>
+                            <li>
+                                <a href="http://music.baidu.com/">
+                                    <span class="newp-c" id="newp-music"></span>音乐
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://image.baidu.com/">
+                                    <span class="newp-c" id="newp-image"></span>图片
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://zhidao.baidu.com/">
+                                    <span class="newp-c" id="newp-zhidao"></span>知道
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wenku.baidu.com/">
+                                    <span class="newp-c" id="newp-wenku"></span>文库
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://top.baidu.com/">
+                                    <span class="newp-c" id="newp-top"></span>风云榜
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://e.baidu.com/">
+                                    <span class="newp-c" id="newp-e"></span>百度推广
+                                </a>
+                            </li>
+                            <li>
+                                <div class="newp-more">
+                                    <a href="https://www.baidu.com/more/">全部产品>></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--nav end-->
+        </header>
+        <!--header end-->
+        <!--article start-->
+        <article>
+            <div class="logo">
+                <img src="bd_logo1.png" width="270" height="129">
+            </div>
+            <form class="form" action="">
+                <span class="search-w">
+                <input type="text"  class="search">
+            </span>
+                <span class="submit-w">
+                 <input type="submit"  class="btn" value="百度一下">
+             </span>
+            </form>
+        </article>
+        <!--article end-->
+        <!--footer start-->
+        <footer>
+            <span class="f1">
+                <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                <a href="http://home.baidu.com/">关于百度</a>
+                <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About&nbsp;&nbsp;Baidu</a>
+            </span>
+            <span class="f2">©2015&nbsp;Baidu&nbsp;
+                <a href="http://www.baidu.com/duty/">使用百度前必读</a>&nbsp;
+                <a href="http://jianyi.baidu.com/">意见反馈</a>&nbsp;京ICP证030173号&nbsp;
+                <span class="fc"></span>
+            </span>
+        </footer>
+        <!--endfooter end-->
+    </div>
+</body>
+
+</html>
